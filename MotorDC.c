@@ -2,7 +2,7 @@
 
 
 //#include "../DC_MOTOR/DC_MOTOR_cfg.h"
-//#include "../../Inc/main.h"
+
 
 void DC_MOTOR_Init(uint8_t au8_MOTOR_Instance)
 {
@@ -90,12 +90,12 @@ void DC_MOTOR_Init(uint8_t au8_MOTOR_Instance)
 void DC_MOTOR_Start(uint8_t au8_MOTOR_Instance, uint8_t au8_DIR, uint16_t au16_SPEED)
 {
 	/* Write To The 2 Direction Control Pins */
-	if(au8_DIR == DIR_CW)
+	if(au8_DIR == dirFoward)
 	{
 		HAL_GPIO_WritePin(DC_MOTOR_CfgParam[au8_MOTOR_Instance].DIR1_GPIO, DC_MOTOR_CfgParam[au8_MOTOR_Instance].DIR1_PIN, 1);
 		HAL_GPIO_WritePin(DC_MOTOR_CfgParam[au8_MOTOR_Instance].DIR2_GPIO, DC_MOTOR_CfgParam[au8_MOTOR_Instance].DIR2_PIN, 0);
 	}
-	else if(au8_DIR == DIR_CCW)
+	else if(au8_DIR == dirReverse)
 	{
 		HAL_GPIO_WritePin(DC_MOTOR_CfgParam[au8_MOTOR_Instance].DIR1_GPIO, DC_MOTOR_CfgParam[au8_MOTOR_Instance].DIR1_PIN, 0);
 		HAL_GPIO_WritePin(DC_MOTOR_CfgParam[au8_MOTOR_Instance].DIR2_GPIO, DC_MOTOR_CfgParam[au8_MOTOR_Instance].DIR2_PIN, 1);

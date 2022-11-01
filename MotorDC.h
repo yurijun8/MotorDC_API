@@ -7,12 +7,12 @@
 
 
 // Direções do motor DC
-#define     0
-#define DIR_CCW   1
+#define dirFoward    0
+#define dirReverse   1
 
 // Propriedades PWM
-#define MOTOR_DC_PWM_RES  10
-#define MOTOR_DC_F_PWM    500
+#define MotorDC_PWM_RES  10
+#define MotorDC_F_PWM    500
 
 // Numero de motores DC utilizados
 #define DC_MOTOR_UNITS  1
@@ -31,7 +31,7 @@ typedef struct
 }DC_MOTOR_CfgType;
 
 
-/*-----[ Prototypes For All Functions ]-----*/
+/*Prototipos das funções*/
 
 void DC_MOTOR_Init(uint8_t au8_MOTOR_Instance);
 void DC_MOTOR_Start(uint8_t au8_MOTOR_Instance, uint8_t au8_DIR, uint16_t au16_SPEED);
@@ -41,7 +41,8 @@ void DC_MOTOR_Stop(uint8_t au8_MOTOR_Instance);
 uint32_t DC_MOTOR_Get_MaxFreq(uint8_t au8_MOTOR_Instance);
 
 
-#endif /* DC_MOTOR_H_ */
+#endif /* MotorDC_H_ */
+
 
 
 
