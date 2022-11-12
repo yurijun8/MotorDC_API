@@ -20,29 +20,26 @@ Mais detalhes sobre esse CI podem ser encontrados no [datasheet](https://www.ti.
 As imagens abaixo representam o microcontrolador utilizado para desenvolver a API, e o esquema de ligação entre os componentes.
 
 ![](https://res.cloudinary.com/rsc/image/upload/b_auto,c_pad,dpr_1.0,f_auto,h_303,q_auto,w_540/c_pad,h_303,w_540/R9173766-01?pgw=1)
-![](https://deepbluembedded.com/wp-content/uploads/2021/03/STM32-DC-Motor-Speed-Control-L293D-H-Bridge-Connection-Diagram.png?ezimgfmt=ng:webp/ngcb6)
 
 
 ### Funções disponíveis
 
 #### DC_MOTOR_Start
-Sets the motor direction and speed to start the motor
+Inicializa os pinos GPIO necessários para a lógica de controle de direção (DIR1 e DIR2)e para o Timer associado ao canal PWM selecionado. E define a resolução e a frequência do PWM conforme configurado pelo usuário no arquivo de configuração.
 
 #### DC_MOTOR_Init
-initializes the required GPIO pins for direction control logic (DIR1 & DIR2), the associated Timer with the selected PWM channel. And sets the PWM resolution and frequency as configured by the user in the config file.
+Define a direção do motor e a velocidade de partida do mesmo.
 
 #### DC_MOTOR_Set_Speed
-Sets the speed of the motor by adjusting the PWM duty cycle
+Ajusta a velocidade do motor ajustando o ciclo de trabalho PWM.
 
 #### DC_MOTOR_Set_Dir
-Sets the direction of rotation for the motor (CW or CCW)
+Define o sentido de rotação do motor.
 
 #### DC_MOTOR_Stop
-Stops the motor
-
+Para o motor.
 
 ---
-
 #### Referências
 
 * https://2020.robotix.in/tutorial/auto/motor_driver/#:~:text=The%20L293D%20IC%20receives%20signals,apply%20voltage%20to%20the%20motors.
