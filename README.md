@@ -26,21 +26,19 @@ As imagens abaixo representam o microcontrolador utilizado para desenvolver a AP
 ### Funções disponíveis
 
 #### DC_MOTOR_Start
-
+Sets the motor direction and speed to start the motor
 
 #### DC_MOTOR_Init
-
+initializes the required GPIO pins for direction control logic (DIR1 & DIR2), the associated Timer with the selected PWM channel. And sets the PWM resolution and frequency as configured by the user in the config file.
 
 #### DC_MOTOR_Set_Speed
-
-
+Sets the speed of the motor by adjusting the PWM duty cycle
 
 #### DC_MOTOR_Set_Dir
-
-
+Sets the direction of rotation for the motor (CW or CCW)
 
 #### DC_MOTOR_Stop
-
+Stops the motor
 
 
 ---
