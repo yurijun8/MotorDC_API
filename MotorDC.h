@@ -3,7 +3,7 @@
 #define MotorDC_H_
 #define HAL_TIM_MODULE_ENABLED
 
-//#include "stm32f4xx_hal.h" //deve ser modificado a depender da placa utilizada
+#include "stm32f4xx_hal.h" //deve ser modificado a depender da placa utilizada
 
 
 // Direções do motor DC

@@ -1,7 +1,5 @@
 #include "MotorDC.h"
-
-
-//#include "../DC_MOTOR/DC_MOTOR_cfg.h"
+#include "DC_MOTOR_cfg.h"
 
 
 void DC_MOTOR_Init(uint8_t au8_MOTOR_Instance)
