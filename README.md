@@ -19,7 +19,7 @@ Mais detalhes sobre esse CI podem ser encontrados no [datasheet](https://www.ti.
 
 As imagens abaixo representam o microcontrolador utilizado para desenvolver a API, e o esquema de ligação entre os componentes.
 
-
+![](https://res.cloudinary.com/rsc/image/upload/b_auto,c_pad,dpr_1.0,f_auto,h_303,q_auto,w_540/c_pad,h_303,w_540/R9173766-01?pgw=1)
 
 
 ### Funções disponíveis
