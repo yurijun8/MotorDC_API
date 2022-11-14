@@ -25,43 +25,41 @@ As imagens abaixo representam o microcontrolador utilizado para desenvolver a AP
 
 ### Funções disponíveis
 
-#### DC_MOTOR_Init
+## DC_MOTOR_Init
 Define a direção do motor e a velocidade de partida do mesmo.
-
-## Parametros:
+#### Parametros:
   uint8_t au8_MOTOR_Instance: Instancia do motor
   
-#### DC_MOTOR_Start
+  
+## DC_MOTOR_Start
 Inicializa os pinos GPIO necessários para a lógica de controle de direção (DIR1 e DIR2)e para o Timer associado ao canal PWM selecionado. E define a resolução e a frequência do PWM conforme configurado pelo usuário no arquivo de configuração.
-
-## Parametros:
+#### Parametros:
    uint8_t au8_MOTOR_Instance: Instancia do motor
    uint8_t au8_DIR: Direção de rotação
    uint16_t au16_SPEED: Velocidade de rotação
    
   
-#### DC_MOTOR_Set_Speed
+## DC_MOTOR_Set_Speed
 Ajusta a velocidade do motor ajustando o ciclo de trabalho PWM.
-
-## Parametros:
+#### Parametros:
    uint8_t au8_MOTOR_Instance: Instancia do motor
    uint16_t au16_SPEED: Velocidade de Rotação
   
  
-#### DC_MOTOR_Set_Dir
+ 
+## DC_MOTOR_Set_Dir
 Define o sentido de rotação do motor.
-
-## Parametros:
+#### Parametros:
   uint8_t au8_MOTOR_Instance: Instancia do Motor
   uint8_t au8_DIR: Direção de rotação
 
 
-#### DC_MOTOR_Stop
-Para o motor.
 
-## Parametros:
+## DC_MOTOR_Stop
+Para o motor.
+#### Parametros:
    uint8_t au8_MOTOR_Instance: Instancia do motor
-  
+ 
 ---
 #### Referências
 
