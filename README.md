@@ -8,7 +8,7 @@ Autores: Luiz Otávio Antunes Gonçalves  ; Yuri Junior da Silva Adriano
 
 ### Requisitos de Hardware e Software
 
-Essa API foi desenvolvida para realizar o controle de um Motor DC, utilizando pelo microcontrolador STM32F410RB6. 
+Essa API foi desenvolvida para realizar o controle de um Motor DC, utilizando pelo microcontrolador STM32F410RBT6. 
 
 ![](https://images.tcdn.com.br/img/img_prod/751846/motor_dc_775_12v_10_000_rpm_4113_1_b7a89ca9edc98ddc4b2647792ec60299.jpg)
 ![](http://www.bosontreinamentos.com.br/wp-content/uploads/2017/07/L293D-pinagem-420x374.jpg)
@@ -25,21 +25,43 @@ As imagens abaixo representam o microcontrolador utilizado para desenvolver a AP
 
 ### Funções disponíveis
 
-#### DC_MOTOR_Start
-Inicializa os pinos GPIO necessários para a lógica de controle de direção (DIR1 e DIR2)e para o Timer associado ao canal PWM selecionado. E define a resolução e a frequência do PWM conforme configurado pelo usuário no arquivo de configuração.
-
 #### DC_MOTOR_Init
 Define a direção do motor e a velocidade de partida do mesmo.
 
+## Parametros:
+  uint8_t au8_MOTOR_Instance: Instancia do motor
+  
+#### DC_MOTOR_Start
+Inicializa os pinos GPIO necessários para a lógica de controle de direção (DIR1 e DIR2)e para o Timer associado ao canal PWM selecionado. E define a resolução e a frequência do PWM conforme configurado pelo usuário no arquivo de configuração.
+
+## Parametros:
+   uint8_t au8_MOTOR_Instance: Instancia do motor
+   uint8_t au8_DIR: Direção de rotação
+   uint16_t au16_SPEED: Velocidade de rotação
+   
+  
 #### DC_MOTOR_Set_Speed
 Ajusta a velocidade do motor ajustando o ciclo de trabalho PWM.
 
+## Parametros:
+   uint8_t au8_MOTOR_Instance: Instancia do motor
+   uint16_t au16_SPEED: Velocidade de Rotação
+  
+ 
 #### DC_MOTOR_Set_Dir
 Define o sentido de rotação do motor.
+
+## Parametros:
+  uint8_t au8_MOTOR_Instance: Instancia do Motor
+  uint8_t au8_DIR: Direção de rotação
+
 
 #### DC_MOTOR_Stop
 Para o motor.
 
+## Parametros:
+   uint8_t au8_MOTOR_Instance: Instancia do motor
+  
 ---
 #### Referências
 
