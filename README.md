@@ -64,4 +64,7 @@ Para o motor.
 #### Referências
 
 * https://2020.robotix.in/tutorial/auto/motor_driver/#:~:text=The%20L293D%20IC%20receives%20signals,apply%20voltage%20to%20the%20motors.
-
+* http://stm32f4-discovery.net/2014/05/all-stm32f429-libraries-at-one-place/
+* https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html
+* https://www.passeidireto.com/arquivo/90331557/descobrindo-o-stm-32/47
+* https://www.st.com/resource/en/reference_manual/cd00171190-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-arm-based-32-bit-mcus-stmicroelectronics.pdf
